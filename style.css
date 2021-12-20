@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5rem 10rem;
+  max-width: 70wv;
+}
+
+.header-main {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 35rem;
+  padding: 0.5rem 1rem;
+}
+
+.label {
+  margin: 0.5rem 1rem;
+}
+
+.password-field {
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  width: 35rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.password-range {
+  display: block;
+  cursor: pointer;
+}
+
+.password-number {
+  width: 5rem;
+}
+
+.password-checkbox {
+  display: block;
+  cursor: pointer;
+}
+
+.password-button {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  width: 35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.password-button:hover {
+  border: 2px solid #000;
+  box-shadow: 0.2rem 0.2rem #000;
+}

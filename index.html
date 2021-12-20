@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header-main">Генератор паролей</h1>
+      <p class="password-field" id="paragraph-el">Password</p>
+      <form id="form-generate">
+        <div class="content-wrapper">
+          <label for="char-range-el" class="label">Количество символов</label>
+          <input
+            type="range"
+            name="range"
+            id="char-range-el"
+            class="password-range"
+            min="3"
+            max="25"
+            step="1"
+          />
+          <input
+            type="number"
+            name=""
+            id="char-number-el"
+            class="password-number"
+            min="3"
+            max="25"
+          />
+        </div>
+        <div class="content-wrapper">
+          <label for="uppercase-el" class="label"
+            >Добавить верхний регистр</label
+          >
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="uppercase-el"
+            class="password-checkbox"
+          />
+        </div>
+        <div class="content-wrapper">
+          <label for="numbers-el" class="label">Добавить цифры</label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="numbers-el"
+            class="password-checkbox"
+          />
+        </div>
+        <div class="content-wrapper">
+          <label for="symbols-el" class="label">Добавить символы</label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="symbols-el"
+            class="password-checkbox"
+          />
+        </div>
+        <input
+          type="submit"
+          value="Сгенерировать пароль"
+          class="password-button"
+          id="button-el"
+        />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
